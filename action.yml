@@ -41,6 +41,10 @@ inputs:
     description: 'MYSQL_PASSWORD - specified superuser password which user is power for created database'
     required: false
     default: ''
+  db init script:
+    description: 'File to mount with database init scripts'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
